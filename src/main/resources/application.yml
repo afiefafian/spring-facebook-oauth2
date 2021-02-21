@@ -1,0 +1,19 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: demo-spring-oauth2
+
+security:
+  oauth2:
+    client:
+      access-token-uri: https://graph.facebook.com/oauth/access_token
+      user-authorization-uri: https://www.facebook.com/dialog/oauth
+      token-name: oauth_token
+      authentication-scheme: query
+      client-authentication-scheme: form
+      client-id:
+      client-secret:
+    resource:
+      user-info-uri: https://graph.facebook.com/me
